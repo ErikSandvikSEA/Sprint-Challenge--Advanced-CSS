@@ -1,1 +1,26 @@
 // Mixins Here
+.section-margin() {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.padded-top-bottom() {
+	padding: 4% 0;
+}
+
+.font-color-mixin(@background-color, @font-color, @border-color) {
+	background-color: @background-color;
+	color: @font-color;
+	border-color: @border-color;
+}
+.custom-btn(@background, @width, @btn-font-color) {
+	background-color: @background;
+	width: @width;
+	color: @btn-font-color;
+	.padded-top-bottom();
+	padding-left: 8%;
+	padding-right: 8%;
+	border-radius: 12px;
+	font-family: @main-font;
+	font-size: 1.8rem;
+}

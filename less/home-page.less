@@ -55,6 +55,36 @@
 			}
 
 			.btn {
+				.custom-btn(@btn-bg-color, 40%, @porcelain);
+				display: flex;
+				text-align: center;
+				padding: 1.5%;
+				justify-content: center;
+				border-radius: 10px;
+				@media @phone {
+					width: 32%;
+					padding: 1.5%;
+				}
+				&:hover {
+					.custom-btn(@porcelain, 42%, @btn-bg-color);
+					border: 0.5px @btn-bg-color solid;
+					display: flex;
+					text-align: center;
+					padding: 1.5%;
+					justify-content: center;
+					border-radius: 10px;
+					@media @phone {
+						width: 32%;
+						padding: 1.5%;
+					}
+				}
+			}
+			button {
+				text-align: center;
+			}
+			.button-container {
+				display: flex;
+				justify-content: start;
 			}
 		}
 
