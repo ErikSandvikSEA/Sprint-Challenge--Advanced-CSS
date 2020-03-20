@@ -9,6 +9,13 @@
 		}
 	}
 }
+.zoom img {
+	transition: transform 0.2s; /* Animation */
+	&:hover {
+		transform: scale(1.2);
+		border: 2px dashed @border-real;
+	}
+}
 .home {
 	width: 90%;
 	.intro {
@@ -54,6 +61,13 @@
 				width: 95%;
 				margin: 0;
 			}
+		}
+	}
+	.zoom img {
+		transition: transform 0.2s; /* Animation */
+		&:hover {
+			transform: scale(1.2);
+			border: 2px dashed @border-real;
 		}
 	}
 
